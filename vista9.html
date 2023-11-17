@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Pago</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            width: 350px;
+        }
+        .container h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .container button, .container input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 1em;
+            width: 100%;
+        }
+        .payment-form {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 1em;
+        }
+        .payment-form input[type="radio"], .payment-form input[type="number"] {
+            margin-right: 10px;
+        }
+        .payment-form label {
+            text-align: left;
+            display: block;
+            margin: 10px 0;
+        }
+        .payment-form input[type="number"] {
+            width: calc(100% - 22px); /* Adjust for border */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #444;
+            color: white;
+            font-size: 1em;
+        }
+        .logo-container img {
+            height: 30px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MÉTODO DE PAGO</h1>
+        <div class="payment-form">
+            <h2>Seleccione</h2>
+            <form>
+                <label>
+                    <input type="radio" name="payment-method" value="cash">
+                    EFECTIVO
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="debit-card">
+                    TARJETA DE DÉBITO
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="credit-card">
+                    TARJETA DE CRÉDITO
+                </label>
+                <label for="installments">CUOTAS</label>
+                <input type="number" id="installments" name="installments" min="1">
+                <input type="submit" value="INGRESAR">
+            </form>
+        </div>
+        <div class="logo-container">
+            <!-- Replace with actual image paths for the logos -->
+            <img src="mastercard-logo.png" alt="MasterCard Logo">
+            <img src="visa-logo.png" alt="Visa Logo">
+        </div>
+    </div>
+</body>
+</html>

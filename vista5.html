@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Information Form</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Adjust width as necessary */
+        }
+
+        .sidebar-button, .submit-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block; /* Make buttons block level */
+        }
+
+        .form-field {
+            margin: 10px 0;
+        }
+
+        .form-field label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-field input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>CARGAR VEHICULO</h1>
+        <button class="sidebar-button">Learn More</button>
+        <h2>Informacion Vehiculo:</h2>
+        <form>
+            <div class="form-field">
+                <label for="license">MATRICULA</label>
+                <input type="text" id="license" name="license">
+            </div>
+            <div class="form-field">
+                <label for="brand">MARCA</label>
+                <input type="text" id="brand" name="brand">
+            </div>
+            <div class="form-field">
+                <label for="model">MODELO</label>
+                <input type="text" id="model" name="model">
+            </div>
+            <div class="form-field">
+                <label for="year">AÑO</label>
+                <input type="text" id="year" name="year">
+            </div>
+            <div class="form-field">
+                <label for="color">COLOR</label>
+                <input type="text" id="color" name="color">
+            </div>
+            <div class="form-field">
+                <label for="owner-id">CEDULA DUEÑO</label>
+                <input type="text" id="owner-id" name="owner-id">
+            </div>
+            <button type="submit" class="submit-button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
